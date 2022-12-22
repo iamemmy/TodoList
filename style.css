@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5vh;
+}
+
+.input-task-wrapper {
+    display: flex;
+    gap: 10px;
+
+    padding: 30px;
+    margin-bottom: 5vh;
+    background: #972bf0;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-task-wrapper input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-task-wrapper button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.input-task-wrapper button:hover {
+    color: #fff;
+    background: #480a7a;
+}
+
+.task-container {
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 1px solid #972bf0;
+    border-radius: 5px;
+    background: #972bf0;
+    
+    visibility: hidden;
+    /* display: flex; */
+}
+
+.task-container ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    border-radius: 3px;
+
+    width: 100%;
+}
+
+.task-container ul li p {
+    color: #972bf0;
+    text-decoration: none;
+    width: 10vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+
+    flex: 5;
+}
+
+.task-container ul li i {
+    color: #fff;
+    background-color: #972bf0;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+
+    flex: 1;
+}
+
+.task-container i:hover {
+    color: #fff;
+    background: #480a7a;
+}
